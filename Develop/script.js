@@ -69,15 +69,11 @@ const displayAverageSalary = function (employeesArray) {
   let average = sum/employeesArray.length; 
 
   //Make the average salary a number fixed to two decimals 
-  //let averageSalaryWithTwoDecimals = average.toFixed(2);
-
-  //let newAverage = Math.round(average * 100) / 100; 
-  //let displayAverage = newAverage.toFixed(2); 
-  //averageSalaryWithTwoDecimals = parseFloat(averageSalaryWithTwoDecimals);
+  let averageSalaryWithTwoDecimals = average.toFixed(2);
 
   let numberOfEmployees = employeesArray.length; 
 
-  console.log(`The average employee salary between our ${numberOfEmployees} employee(s) is $${average.toFixed(2)}.`);
+  console.log(`The average employee salary between our ${numberOfEmployees} employee(s) is $${averageSalaryWithTwoDecimals}.`);
 
   return average; 
 };
