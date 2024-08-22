@@ -64,18 +64,20 @@ const displayAverageSalary = function (employeesArray) {
   //Take in the numbers stored as strings, convert them to floats and add them to the sum
   for (var i = 0; i < employeesArray.length; i++) {
     sum += parseFloat(employeesArray[i].salary);
-    console.log(parseFloat(employeesArray[i].salary)); 
-  }
+  };
 
   let average = sum/employeesArray.length; 
-  console.log(average);
-  
+
   //Make the average salary a number fixed to two decimals 
-  let averageSalaryWithTwoDecimals = average.toFixed(2);
-  console.log(averageSalaryWithTwoDecimals);
+  //let averageSalaryWithTwoDecimals = average.toFixed(2);
+
+  //let newAverage = Math.round(average * 100) / 100; 
+  //let displayAverage = newAverage.toFixed(2); 
+  //averageSalaryWithTwoDecimals = parseFloat(averageSalaryWithTwoDecimals);
+
   let numberOfEmployees = employeesArray.length; 
 
-  console.log(`The average employee salary between our ${numberOfEmployees} employee(s) is $${averageSalaryWithTwoDecimals}.`);
+  console.log(`The average employee salary between our ${numberOfEmployees} employee(s) is $${average.toFixed(2)}.`);
 
   return average; 
 };
